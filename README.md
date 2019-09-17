@@ -6,3 +6,7 @@ Instructions
 Register on OMDb's website for an API key. Insert this API key into "script.js" for the variable apiKey. You are allowed 1,000 free requests daily.
 
 Register at http://www.omdbapi.com/apikey.aspx
+
+Screenshots
+===========
+Located in the "screenshots" folder. Might need to download to view properly.
