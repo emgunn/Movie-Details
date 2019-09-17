@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box
+  }
+  
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    color: #666;
+    background: #F6F6F6;
+  }
+  
+  #root {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #response {
+    text-align: center;
+  }
+  
+  #navigator {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    background-image: linear-gradient(120deg, #3a1be9 0%, #fcbc87 100%);
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+    color: white;
+   /* -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;*/
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #movie {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+  }
+
+  query1 {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    /*padding: 1.5rem 2.5rem;
+    padding: 1.5rem 1.5rem;*/
+    color: gray;
+  }
+
+  query2 {
+    display: block;
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(61, 236, 99);
+    word-wrap: break-word;
+  }
+  
+  img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+  
+  p {
+    padding: 0 2rem 2rem;
+    margin: 0;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+  }
+
+  input {
+    text-align: center;
+    width: 30rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    margin: 0 0 2rem 0;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  ul {
+      text-align: center;
+      padding: 0rem 1rem;
+      padding-bottom: 2rem;
+      width: 70%;
+      margin: auto;
+  }
+  
+  .title {
+    padding: 2rem 2rem;
+    font-size: 5rem;
+    background-image: none;
+    background-color: rgba(34, 131, 241, 0.856);
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+  }
+
+  .search {
+      text-align: center; 
+  }
+
+  .button {
+    height: 3rem;
+    font-size: 1.25rem;
+    width: 6rem;
+    background-color: rgb(61, 172, 236);
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: bold;
+  }
+
+  #moreResultsButton {
+      width: 7rem;
+  }
+
+  .button:active {
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    -webkit-tap-highlight-color:transparent;
+    transform: translate3D(0, -5px, 0);
+  }
+
+  .button:focus {
+      outline: none;
+  }
+
+  .movie {
+    text-align: center;
+    font-size: 2.5rem;
+    height: 3rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 1rem;
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+  }
+  
+  .card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -10px, 0);
+  }
+
+  .listItem {
+    margin: 1rem;
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+    font-size: 1.5rem;
+  }
+  
+  .listItem:hover {
+    background: rgb(72, 218, 255);
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -3px, 0);
+    color: black;
+  }
+
+  .footer {
+      text-align: center;
+      color:gray;
+      font-size: 1rem;
+      padding: 0 0rem 0rem;
+  }
+
+  #footerBlock {
+    list-style-type: none;
+    padding-bottom: 0;
+    float: bottom;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+  
+  /*
+  .card:nth-child(2n) h1 {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  }
+  
+  .card:nth-child(4n) h1 {
+    background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+  }
+  
+  .card:nth-child(5n) h1 {
+    background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+  }*/

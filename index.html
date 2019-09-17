@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Movie/TV Details</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="title">Movie/TV Details</h1>
+  <h2>Powered by IMDb's database</h2>
+
+  <div class="search">
+    <input id="search" placeholder="Search by title...">
+    <button id="searchButton" class="button" onclick="nameSearch()">Enter</button>
+    <button id="moreResultsButton" class="button" onclick="seeMore(1)">See results</button>
+  </div>
+
+  <div id="response">
+    <h2 id="movie" class="movie"></h2>
+    <img id="poster">
+
+    <div id="cards" class="container"></div>
+
+    <query1 id="query1"></query1>
+    <query2 id="query2"></query2>
+    <ul id="resultList"></ul>
+  </div>
+
+  <div id="navigator">
+  </div>
+
+  <div id="root"></div>
+
+  <div id="footerBlock" class="footer">
+    <p class="footer">Eric Gunn, 2019</p>
+    <p class="footer">Powered by IMDb's database</p>
+    <p class="footer">Made with OMDb API</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
