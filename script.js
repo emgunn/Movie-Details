@@ -21,7 +21,7 @@ let domain = 'www.omdbapi.com/';
 let queryType;
 let query;
 let apiTag = '&apikey=';
-let apiKey = 'ffb88a2d';
+let apiKey = '';
 
 let cards = 0;
 
